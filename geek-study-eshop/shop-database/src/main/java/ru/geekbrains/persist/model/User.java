@@ -27,10 +27,10 @@ public class User {
     private String email;
 
     @Column(length = 32)
-    private String firstName;
+    private String first_name;
 
     @Column(length = 32)
-    private String lastName;
+    private String last_name;
 
     public User() {
     }
@@ -39,8 +39,8 @@ public class User {
         this.id = id;
         this.name = name;
         this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.first_name = firstName;
+        this.last_name = lastName;
     }
 
     public Long getId() {
@@ -84,18 +84,18 @@ public class User {
     }
 
     public String getFirstName() {
-        return firstName;
+        return first_name;
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        this.first_name = firstName;
     }
 
     public String getLastName() {
-        return lastName;
+        return last_name;
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
+        this.last_name = lastName;
     }
 }
